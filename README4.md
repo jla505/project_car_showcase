@@ -128,7 +128,7 @@ To get a local copy up and running follow these simple example steps.
    const headers: HeadersInit = {
     "X-RapidAPI-Key": "apiKey",
     "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
-  };
+   };
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

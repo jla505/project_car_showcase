@@ -1,4 +1,4 @@
-# Chat App
+# Cartopia
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
@@ -34,7 +34,7 @@
   <h3 align="center">Chat App</h3>
 
   <p align="center">
-    A live chat app built with React and Firebase
+    A car rental website made with React, Next JS 13, TypeScript, Tailwind CSS.
     <br />
     <a href="https://github.com/jla505/firechat"><strong>Explore the docs »</strong></a>
     <br />
@@ -83,32 +83,28 @@
 [![Product Name Screen Shot][product-screenshot2]](https://example.com)
 [![Product Name Screen Shot][product-screenshot3]](https://example.com)
 
-A web chat app built with React and Firebase utilizes the powerful features of both technologies to create a real-time messaging application. Here's a description of how such an app could be constructed:
+Cartopia is a dynamic and modern car rental website designed and developed as a personal project. Leveraging the power of React, Next.js 13, TypeScript, and Tailwind CSS, this website aims to provide users with a seamless and user-friendly experience for renting cars for their travel needs.
 
-1. User Authentication: The app would include user authentication functionality using Firebase Authentication. Users would be able to sign up, log in, and log out using social logins such as Google.
+1. The homepage welcomes users with an appealing layout showcasing a featured car and a quick search form.
 
-2. Real-time Database: Firebase Realtime Database is used as the backend database for storing and synchronizing chat messages in real time. These NoSQL databases would allow for efficient, scalable, and synchronized storage of chat messages between users.
+2. The Car Listings page displays a grid of car cards, each representing a rental car. Each car card presents an image, make, model, rental price, and a "View Details" button. Clicking the "View Details" button navigates users to the Car Details page.
 
-3. React Components: The app's user interface would be built using React components. The main components include a chat room component that displays the messages and an input component for users to enter new messages.
+3. The Car Details page provides comprehensive information about a selected car. Users can explore details such as technical specifications, features, rental rates, and high-quality images. NOTE, the car api keys have expired. Please contact me below to update the api.
 
-4. Real-time Messaging: Using Firebase's real-time capabilities, the app would update the chat interface in real time as new messages are sent or received. When a user sends a message, it would be instantly displayed in the chat room for all participants. 
+4. Tailwind CSS is utilized to create a responsive design that adapts seamlessly to various devices and screen sizes. The website remains visually appealing and functional on desktops, tablets, and smartphones.
 
-5. Toggle dark / light theme
+5. Next.js 13's performance optimization features ensure fast loading times and smooth interactions.
 
-6. Create and delete private chats
-
-7. Create, manage, leave and delete public chats
-
-8. Responsive design
-
-By combining the power of React for building interactive user interfaces and Firebase for real-time data synchronization, authentication, and database management, a web chat app can be created that provides a seamless and responsive messaging experience for users.
+This project is designed with engaging user interfaces, managing state with TypeScript, implementing dynamic routing, and creating responsive layouts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Firebase][Firebase.com]][Firebase-url]
+* [![Next JS][NextJS.com]][NextJS-url]
+* [![TypeScript][TypeScript.com]][TypeScript-url]
+* [![TailwindCSS][TailwindCSS.com]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,24 +122,21 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at Google Firestore 
+1. Get a free API Key at Cars by API-Ninja
 2. Clone the repo
    ```sh
-   git clone git@github.com:jla505/firechat.git
+   git clone git@github.com:jla505/project_car_showcase.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `.env`
+4. Enter your API in `utils/index.ts`
    ```js
-   REACT_APP_API_KEY={apiKey}
-   REACT_APP_API_KEY={apiKey}
-   REACT_APP_AUTH_DOMAIN={authDomain}
-   REACT_APP_PROJECT_ID={projectId}
-   REACT_APP_STORAGE_BUCKET={storageBucket}
-   REACT_APP_MESSAGING_SENDER_ID={senderId}
-   REACT_APP_APP_ID={appId}
+   const headers: HeadersInit = {
+    "X-RapidAPI-Key": "apiKey",
+    "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
+   };
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -1,4 +1,4 @@
-# Chat App
+# Cartopia
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
@@ -10,8 +10,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -22,31 +20,27 @@
 -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jla505/firechat">
+  <a href="https://github.com/jla505/project_car_showcase">
     <img src="public/logo192.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Chat App</h3>
+  <h3 align="center">Cartopia</h3>
 
   <p align="center">
-    A live chat app built with React and Firebase
+    A car rental website made with React, Next JS 13, TypeScript, Tailwind CSS.
     <br />
-    <a href="https://github.com/jla505/firechat"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/jla505/project_car_showcase"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/jla505/firechat/issues">Report Bug</a>
+    <a href="https://github.com/jla505/project_car_showcase/issues">Report Bug</a>
     ·
-    <a href="https://github.com/jla505/firechat/issues">Request Feature</a>
+    <a href="https://github.com/jla505/project_car_showcase/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -74,41 +68,35 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-[![Product Name Screen Shot][product-screenshot2]](https://example.com)
-[![Product Name Screen Shot][product-screenshot3]](https://example.com)
+![Product Name Screen Shot][product-screenshot]
+![Product Name Screen Shot][product-screenshot2]
+![Product Name Screen Shot][product-screenshot3]
 
-A web chat app built with React and Firebase utilizes the powerful features of both technologies to create a real-time messaging application. Here's a description of how such an app could be constructed:
+Cartopia is a dynamic and modern car rental website designed and developed as a personal project. Leveraging the power of React, Next.js 13, TypeScript, and Tailwind CSS, this website aims to provide users with a seamless and user-friendly experience for renting cars for their travel needs.
 
-1. User Authentication: The app would include user authentication functionality using Firebase Authentication. Users would be able to sign up, log in, and log out using social logins such as Google.
+1. The homepage welcomes users with an appealing layout showcasing a featured car and a quick search form.
 
-2. Real-time Database: Firebase Realtime Database is used as the backend database for storing and synchronizing chat messages in real time. These NoSQL databases would allow for efficient, scalable, and synchronized storage of chat messages between users.
+2. The Car Listings page displays a grid of car cards, each representing a rental car. Each car card presents an image, make, model, rental price, and a "View Details" button. Clicking the "View Details" button navigates users to the Car Details page.
 
-3. React Components: The app's user interface would be built using React components. The main components include a chat room component that displays the messages and an input component for users to enter new messages.
+3. The Car Details page provides comprehensive information about a selected car. Users can explore details such as technical specifications, features, rental rates, and high-quality images. NOTE, the car api keys have expired. Please contact me below to update the api.
 
-4. Real-time Messaging: Using Firebase's real-time capabilities, the app would update the chat interface in real time as new messages are sent or received. When a user sends a message, it would be instantly displayed in the chat room for all participants. 
+4. Tailwind CSS is utilized to create a responsive design that adapts seamlessly to various devices and screen sizes. The website remains visually appealing and functional on desktops, tablets, and smartphones.
 
-5. Toggle dark / light theme
+5. Next.js 13's performance optimization features ensure fast loading times and smooth interactions.
 
-6. Create and delete private chats
-
-7. Create, manage, leave and delete public chats
-
-8. Responsive design
-
-By combining the power of React for building interactive user interfaces and Firebase for real-time data synchronization, authentication, and database management, a web chat app can be created that provides a seamless and responsive messaging experience for users.
+This project is designed with engaging user interfaces, managing state with TypeScript, implementing dynamic routing, and creating responsive layouts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![Firebase][Firebase.com]][Firebase-url]
+* [![Next JS][NextJS.com]][NextJS-url]
+* [![TypeScript][TypeScript.com]][TypeScript-url]
+* [![TailwindCSS][TailwindCSS.com]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,38 +114,31 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at Google Firestore 
+1. Get a free API Key at Cars by API-Ninja
 2. Clone the repo
    ```sh
-   git clone git@github.com:jla505/firechat.git
+   git clone git@github.com:jla505/project_car_showcase.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `.env`
+4. Enter your API in `utils/index.ts`
    ```js
-   REACT_APP_API_KEY={apiKey}
-   REACT_APP_API_KEY={apiKey}
-   REACT_APP_AUTH_DOMAIN={authDomain}
-   REACT_APP_PROJECT_ID={projectId}
-   REACT_APP_STORAGE_BUCKET={storageBucket}
-   REACT_APP_MESSAGING_SENDER_ID={senderId}
-   REACT_APP_APP_ID={appId}
+   const headers: HeadersInit = {
+    "X-RapidAPI-Key": "apiKey",
+    "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
+  };
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this web app to chat with others or experiment with the code!
+Use this car rental website to experiment with the code!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -170,11 +151,9 @@ Use this web app to chat with others or experiment with the code!
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/jla505/firechat/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/jla505/project_car_showcase/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -192,8 +171,6 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
@@ -201,14 +178,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
 ## Contact
 
 Your Name - [@_jimbojl](https://twitter.com/_jimbojl) - jinwoodjin@gmail.com
 
-Project Link: [https://github.com/jla505/firechat](https://github.com/jla505/firechat)
+Project Link: [https://github.com/jla505/project_car_showcase](https://github.com/jla505/project_car_showcase)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,5 +212,9 @@ Use this space to list resources you find helpful and would like to give credit 
 [product-screenshot3]: public/Screenshot3.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Firebase.com]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
-[Firebase-url]: https://firebase.google.com/?gad=1&gclid=Cj0KCQjw2eilBhCCARIsAG0Pf8t2asDzDpbc8faGmt2duOrqyMrAMkVL1_EE-ZOY6xe_90xF_6nNgUoaAkuaEALw_wcB&gclsrc=aw.ds
+[NextJS.com]: https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white
+[NextJS-url]: https://nextjs.org/
+[TypeScript.com]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[TailwindCSS.com]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/

@@ -1,4 +1,4 @@
-# React Admin Dashboard
+# Cartopia
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
@@ -23,22 +23,22 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jla505/admindashboardreact">
-    <img src="public/graph.jpg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/jla505/project_car_showcase">
+    <img src="public/logo192.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Admin Dashboard</h3>
+  <h3 align="center">Cartopia</h3>
 
   <p align="center">
-    An Admin Dashboard built with React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid. This application consists of Light and Dark Mode, 4 different Charts, 3 different Data Table Pages, FAQ Page, Form Page, and Calendar Integration.
+    A car rental website made with React, Next JS 13, TypeScript, Tailwind CSS.
     <br />
-    <a href="https://github.com/jla505/admindashboardreact"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/jla505/project_car_showcase"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/jla505/admindashboardreact/issues">Report Bug</a>
+    <a href="https://github.com/jla505/project_car_showcase/issues">Report Bug</a>
     ·
-    <a href="https://github.com/jla505/admindashboardreact/issues">Request Feature</a>
+    <a href="https://github.com/jla505/project_car_showcase/issues">Request Feature</a>
   </p>
 </div>
 
@@ -74,30 +74,29 @@
 ![Product Name Screen Shot][product-screenshot]
 ![Product Name Screen Shot][product-screenshot2]
 ![Product Name Screen Shot][product-screenshot3]
-![Product Name Screen Shot][product-screenshot4]
-![Product Name Screen Shot][product-screenshot5]
-![Product Name Screen Shot][product-screenshot6]
-![Product Name Screen Shot][product-screenshot7]
 
-An intuitive and user-friendly Admin Dashboard that provides a comprehensive overview of various aspects of a system or application. This dashboard is designed with a clean and modern user interface, making it easy for administrators to manage and monitor different functionalities.
+Cartopia is a dynamic and modern car rental website designed and developed as a personal project. Leveraging the power of React, Next.js 13, TypeScript, and Tailwind CSS, this website aims to provide users with a seamless and user-friendly experience for renting cars for their travel needs.
 
-1. The dashboard features a responsive layout that adapts to different screen sizes, ensuring usability on both desktop and mobile devices. The main dashboard page consists of several components and sections, each catering to specific data visualization and management needs.
+1. The homepage welcomes users with an appealing layout showcasing a featured car and a quick search form.
 
-2. The navigation bar, designed using Material UI components, is positioned at the left of the dashboard. It provides quick access to different sections of the app, such as Analytics, Users, Events, Settings, and Reports. The navigation bar also includes a search bar for finding specific data entries quickly.
+2. The Car Listings page displays a grid of car cards, each representing a rental car. Each car card presents an image, make, model, rental price, and a "View Details" button. Clicking the "View Details" button navigates users to the Car Details page.
 
-3. The Analytics section of the dashboard prominently displays Nivo Charts, offering visual representations of key performance metrics. Line charts, bar graphs, and pie charts provide insights into user engagement, traffic trends, and revenue generation.
+3. The Car Details page provides comprehensive information about a selected car. Users can explore details such as technical specifications, features, rental rates, and high-quality images. NOTE, the car api keys have expired. Please contact me below to update the api.
 
-4. The Users section utilizes Formik and Yup for creating, updating, and managing user profiles.
+4. Tailwind CSS is utilized to create a responsive design that adapts seamlessly to various devices and screen sizes. The website remains visually appealing and functional on desktops, tablets, and smartphones.
 
-5. The FullCalendar component is integrated into the dashboard to manage and display upcoming events, appointments, and deadlines. Admins can easily create, edit, and delete events using the interactive calendar interface. Event details and descriptions can be viewed by clicking on specific calendar entries.
+5. Next.js 13's performance optimization features ensure fast loading times and smooth interactions.
 
-In essence, the Admin Dashboard web app built with React, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid combines powerful data visualization, user management, event scheduling, and data manipulation functionalities into a cohesive and user-friendly interface. This application caters to the needs of administrators, providing them with the tools they require to effectively monitor, manage, and optimize various aspects of their system or application.
+This project is designed with engaging user interfaces, managing state with TypeScript, implementing dynamic routing, and creating responsive layouts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
 * [![React][React.js]][React-url]
+* [![Next JS][NextJS.com]][NextJS-url]
+* [![TypeScript][TypeScript.com]][TypeScript-url]
+* [![TailwindCSS][TailwindCSS.com]][TailwindCSS-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,17 +114,21 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Clone the repo
+1. Get a free API Key at Cars by API-Ninja
+2. Clone the repo
    ```sh
-   git clone git@github.com:jla505/admindashboardreact.git
+   git clone git@github.com:jla505/project_car_showcase.git
    ```
-2. Install NPM packages
+3. Install NPM packages
    ```sh
    npm install
    ```
-3. Run the program
-   ```
-   npm run start
+4. Enter your API in `utils/index.ts`
+   ```js
+   const headers: HeadersInit = {
+    "X-RapidAPI-Key": "apiKey",
+    "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
+  };
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -133,7 +136,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this Admin Dashboard to look around and experiment with the code!
+Use this car rental website to experiment with the code!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +151,7 @@ Use this Admin Dashboard to look around and experiment with the code!
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/jla505/admindashboardreact/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/jla505/project_car_showcase/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +183,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@_jimbojl](https://twitter.com/_jimbojl) - jinwoodjin@gmail.com
 
-Project Link: [https://github.com/jla505/admindashbaordreact](https://github.com/jla505/admindashbaordreact)
+Project Link: [https://github.com/jla505/project_car_showcase](https://github.com/jla505/project_car_showcase)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,9 +210,11 @@ Use this space to list resources you find helpful and would like to give credit 
 [product-screenshot]: public/Screenshot1.png
 [product-screenshot2]: public/Screenshot2.png
 [product-screenshot3]: public/Screenshot3.png
-[product-screenshot4]: public/Screenshot4.png
-[product-screenshot5]: public/Screenshot5.png
-[product-screenshot6]: public/Screenshot6.png
-[product-screenshot7]: public/Screenshot7.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[NextJS.com]: https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white
+[NextJS-url]: https://nextjs.org/
+[TypeScript.com]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[TypeScript-url]: https://www.typescriptlang.org/
+[TailwindCSS.com]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/

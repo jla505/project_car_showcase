@@ -31,7 +31,7 @@
     <img src="public/logo192.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Chat App</h3>
+  <h3 align="center">Car Rental Website</h3>
 
   <p align="center">
     A car rental website made with React, Next JS 13, TypeScript, Tailwind CSS.
